@@ -24,49 +24,49 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
   const alaCarteServices = [
     {
       title: 'SEO Audit',
-      price: 'From KES 35,000',
+      price: 'From $350',
       description: 'Comprehensive crawl, indexing, and on-page diagnostic uncovering search visibility bottlenecks and quick-win fixes.',
       deliverable: 'Technical audit + prioritised issue matrix'
     },
     {
       title: 'Technical SEO',
-      price: 'From KES 40,000',
+      price: 'From $400',
       description: 'Deep site architecture remediation, core web vitals, structured schema markup, and canonical indexing repairs.',
       deliverable: 'Engineered code & indexation fixes'
     },
     {
       title: 'Keyword & Search Strategy',
-      price: 'From KES 30,000',
+      price: 'From $300',
       description: 'High-intent commercial search mapping, search volume analysis, competitor gap intelligence, and topical cluster plans.',
       deliverable: 'Target keyword matrix & content plan'
     },
     {
       title: 'Website Strategy',
-      price: 'From KES 50,000',
+      price: 'From $500',
       description: 'Information architecture, user flow mapping, conversion touchpoints, and wireframe narratives designed to convert traffic.',
       deliverable: 'Website blueprint & UX hierarchy'
     },
     {
       title: 'Content Strategy',
-      price: 'From KES 40,000',
+      price: 'From $400',
       description: 'Topical authority modeling, editorial frameworks, and commercial copywriting guidelines built for buyer education.',
       deliverable: 'Editorial pillars & copy blueprints'
     },
     {
       title: 'Digital Positioning',
-      price: 'From KES 50,000',
+      price: 'From $500',
       description: 'Differentiation narrative, value proposition engineering, and target audience messaging that sets you apart from competitors.',
       deliverable: 'Positioning playbook & value prop deck'
     },
     {
       title: 'SEO Retainer',
-      price: 'From KES 50,000 / month',
+      price: 'From $500 / month',
       description: 'Dedicated ongoing search engine optimisation, ranking defense, technical monitoring, and monthly keyword expansion.',
       deliverable: 'Monthly implementation & ranking reports'
     },
     {
       title: 'Strategic Advisory',
-      price: 'From KES 75,000 / month',
+      price: 'From $750 / month',
       description: 'Executive-level digital consultation, senior stakeholder guidance, vendor vetting, and digital growth roadmap governance.',
       deliverable: 'Bi-weekly advisory calls & ongoing reviews'
     }
@@ -185,7 +185,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                 <div className="pt-2">
                   <div className="text-xs text-white/40 font-mono uppercase tracking-wider">Investment</div>
                   <div className="text-3xl font-bold font-editorial text-[#E8E8E8] text-[#C5A358]">
-                    From KES 35,000
+                    From $350
                   </div>
                 </div>
                 <p className="text-sm text-white/80 font-medium pt-1">
@@ -288,9 +288,9 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                 <div className="pt-2">
                   <div className="text-xs text-white/40 font-mono uppercase tracking-wider">Investment</div>
                   <div className="text-3xl font-bold font-editorial text-[#C5A358]">
-                    KES 100,000 – 175,000
+                    $1,000 – $1,750
                   </div>
-                  <div className="text-[11px] text-white/40 font-mono">From KES 100,000 based on scope depth</div>
+                  <div className="text-[11px] text-white/40 font-mono">From $1,000 based on scope depth</div>
                 </div>
                 <p className="text-sm text-white/90 font-medium pt-1">
                   Turn the business vision into an executable digital strategy.
@@ -394,7 +394,7 @@ export function PricingPage({ onNavigate }: PricingPageProps) {
                 <div className="pt-2">
                   <div className="text-xs text-white/40 font-mono uppercase tracking-wider">Investment</div>
                   <div className="text-3xl font-bold font-editorial text-[#C5A358]">
-                    KES 80,000 – 200,000
+                    $800 – $2,000
                   </div>
                   <div className="text-[11px] text-white/40 font-mono">Per month / tailored to search velocity</div>
                 </div>

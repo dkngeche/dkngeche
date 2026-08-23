@@ -24,7 +24,7 @@ export function ContactPage() {
     website: '',
     servicesNeeded: ['Digital Strategy'],
     projectDescription: '',
-    budgetRange: 'DIGITAL STRATEGY — KES 100,000–175,000 (Positioning + audience + website + SEO + content + 90-day roadmap)',
+    budgetRange: 'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
     preferredContact: 'email'
   });
 
@@ -51,10 +51,10 @@ export function ContactPage() {
   ];
 
   const budgetOptions = [
-    'DIGITAL CLARITY — KES 35,000 (Audit + diagnosis + recommendations)',
-    'DIGITAL STRATEGY — KES 100,000–175,000 (Positioning + audience + website + SEO + content + 90-day roadmap)',
-    'DIGITAL GROWTH PARTNER — KES 80,000–200,000/month (Ongoing SEO + digital strategy + optimisation + advisory)',
-    'À LA CARTE / SPECIFIC SERVICE (e.g. SEO Audit KES 35k, Tech SEO KES 40k, Strategy KES 50k)',
+    'DIGITAL CLARITY — $350 (Audit + diagnosis + recommendations)',
+    'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
+    'DIGITAL GROWTH PARTNER — $800–$2,000/month (Ongoing SEO + digital strategy + optimisation + advisory)',
+    'À LA CARTE / SPECIFIC SERVICE (e.g. SEO Audit $350, Tech SEO $400, Strategy $500)',
     'NOT SURE YET / CUSTOM (Let’s diagnose the problem on a discovery call)'
   ];
 
@@ -234,21 +234,21 @@ export function ContactPage() {
                 <div className="p-3 rounded-lg bg-white/[0.02] border border-white/5 space-y-1">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-white">Digital Clarity</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From KES 35,000</span>
+                    <span className="font-mono text-xs text-[#C5A358]">From $350</span>
                   </div>
                   <p className="text-[11px] text-white/50">Audit + diagnosis + recommendations</p>
                 </div>
                 <div className="p-3 rounded-lg bg-[#C5A358]/10 border border-[#C5A358]/20 space-y-1">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-white">Digital Strategy</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From KES 100,000</span>
+                    <span className="font-mono text-xs text-[#C5A358]">From $1,000</span>
                   </div>
                   <p className="text-[11px] text-white/70">Positioning + audience + website + SEO + 90-day roadmap</p>
                 </div>
                 <div className="p-3 rounded-lg bg-white/[0.02] border border-white/5 space-y-1">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-white">Digital Growth Partner</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From KES 80,000/mo</span>
+                    <span className="font-mono text-xs text-[#C5A358]">From $800/mo</span>
                   </div>
                   <p className="text-[11px] text-white/50">Ongoing SEO + digital strategy + optimisation + advisory</p>
                 </div>
@@ -319,7 +319,7 @@ export function ContactPage() {
                         website: '',
                         servicesNeeded: ['Digital Strategy'],
                         projectDescription: '',
-                        budgetRange: '$3k – $8k (Strategic Advisory / Sprints)',
+                        budgetRange: 'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
                         preferredContact: 'email'
                       });
                     }}
