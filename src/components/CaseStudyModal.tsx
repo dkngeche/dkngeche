@@ -21,21 +21,21 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
 
   return (
     <div
-      className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fadeIn"
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-fadeIn"
       role="dialog"
       aria-modal="true"
       aria-labelledby="case-study-title"
     >
-      <div className="bg-[#121212] border border-white/15 w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden my-8 max-h-[92vh] flex flex-col">
+      <div className="bg-[#0B1626] border border-white/[0.12] w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden my-8 max-h-[92vh] flex flex-col">
         {/* Sticky Header */}
-        <div className="p-4 sm:p-6 border-b border-white/10 bg-[#161616] flex items-center justify-between shrink-0">
+        <div className="p-4 sm:p-6 border-b border-white/[0.08] bg-[#070D18] flex items-center justify-between shrink-0">
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-1.5 text-xs text-white/50" aria-label="Breadcrumb">
             <span>My Work</span>
             <ChevronRight className="w-3 h-3 text-white/30" />
             <span className="text-[#C5A358] font-medium">{caseStudy.category}</span>
             <ChevronRight className="w-3 h-3 text-white/30" />
-            <span className="text-[#E8E8E8] font-semibold truncate max-w-[180px] sm:max-w-xs">{caseStudy.client}</span>
+            <span className="text-[#E8E8E8] font-bold truncate max-w-[180px] sm:max-w-xs">{caseStudy.client}</span>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -45,7 +45,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
               className="p-2 text-white/60 hover:text-white hover:bg-white/5 rounded-md transition-colors text-xs flex items-center gap-1"
             >
               <Share2 className="w-4 h-4 text-[#C5A358]" />
-              <span className="hidden sm:inline">{copied ? 'Link Copied' : 'Share'}</span>
+              <span className="hidden sm:inline font-mono">{copied ? 'Link Copied' : 'Share'}</span>
             </button>
             <button
               id="close-case-study-btn"
@@ -59,7 +59,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
         </div>
 
         {/* Scrollable Content Body */}
-        <div className="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-8 bg-[#121212]">
+        <div className="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-8 bg-[#0B1626]">
           {/* Title and Client Overview */}
           <div className="space-y-4">
             <div className="flex flex-wrap items-center gap-3">
@@ -84,13 +84,13 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
               )}
             </div>
 
-            <h2 id="case-study-title" className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-[#E8E8E8] font-semibold leading-tight">
+            <h2 id="case-study-title" className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-[#E8E8E8] font-bold leading-tight">
               {caseStudy.client}: {caseStudy.summary}
             </h2>
 
             <div className="flex flex-wrap gap-2 pt-1">
               {caseStudy.services.map((svc, i) => (
-                <span key={i} className="text-xs px-2.5 py-1 bg-[#1A1A1A] border border-white/10 text-white/70 rounded-md">
+                <span key={i} className="text-xs px-2.5 py-1 bg-[#070D18] border border-white/[0.08] text-white/75 rounded-md font-medium">
                   {svc}
                 </span>
               ))}
@@ -98,7 +98,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </div>
 
           {/* Section 1: The Challenge */}
-          <section className="bg-[#181818] border border-white/10 rounded-xl p-6 space-y-2">
+          <section className="bg-[#070D18] border border-white/[0.08] rounded-xl p-6 space-y-2">
             <div className="text-xs font-mono uppercase tracking-widest text-red-400 font-bold flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-red-400"></span>
               The Challenge (What Problem Existed)
@@ -109,7 +109,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </section>
 
           {/* Section 2: The Opportunity */}
-          <section className="bg-[#181818] border border-white/10 rounded-xl p-6 space-y-2">
+          <section className="bg-[#070D18] border border-white/[0.08] rounded-xl p-6 space-y-2">
             <div className="text-xs font-mono uppercase tracking-widest text-teal-400 font-bold flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-teal-400"></span>
               The Opportunity (What Could Be Improved)
@@ -120,7 +120,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </section>
 
           {/* Section 3: The Strategy */}
-          <section className="bg-[#181818] border border-white/10 rounded-xl p-6 space-y-2">
+          <section className="bg-[#070D18] border border-white/[0.08] rounded-xl p-6 space-y-2">
             <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#C5A358]"></span>
               The Strategy (How Dickson Approached the Problem)
@@ -131,7 +131,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </section>
 
           {/* Section 4: The Work */}
-          <section className="bg-[#181818] border border-white/10 rounded-xl p-6 space-y-4">
+          <section className="bg-[#070D18] border border-white/[0.08] rounded-xl p-6 space-y-4">
             <div className="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400"></span>
               The Work (Specific Activities Undertaken)
@@ -147,7 +147,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </section>
 
           {/* Section 5: The Result */}
-          <section className="bg-[#1A1A1A] border border-[#C5A358]/40 rounded-xl p-6 sm:p-7 space-y-4">
+          <section className="bg-[#070D18] border border-[#C5A358]/40 rounded-xl p-6 sm:p-7 space-y-4 shadow-xl">
             <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-[#C5A358]" />
               The Result (Measurable Outcomes)
@@ -159,10 +159,10 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
             {caseStudy.result.metrics && caseStudy.result.metrics.length > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 {caseStudy.result.metrics.map((metric, i) => (
-                  <div key={i} className="bg-[#222222] border border-white/10 rounded-lg p-3.5 text-left">
+                  <div key={i} className="bg-[#162234] border border-white/[0.08] rounded-lg p-3.5 text-left">
                     <div className="text-lg font-bold text-white">{metric.value}</div>
                     <div className="text-xs font-semibold text-[#C5A358] mt-0.5">{metric.label}</div>
-                    {metric.note && <div className="text-[11px] text-white/50 mt-1">{metric.note}</div>}
+                    {metric.note && <div className="text-[11px] text-white/60 mt-1">{metric.note}</div>}
                   </div>
                 ))}
               </div>
@@ -170,7 +170,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
           </section>
 
           {/* Section 6: The Takeaway */}
-          <section className="bg-[#0A0A0A] border border-white/10 text-white rounded-xl p-6 sm:p-7 space-y-2">
+          <section className="bg-[#050911] border border-white/[0.08] text-white rounded-xl p-6 sm:p-7 space-y-2">
             <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
               The Strategic Takeaway
             </div>
@@ -181,7 +181,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
         </div>
 
         {/* Modal Footer CTA */}
-        <div className="p-4 sm:p-6 border-t border-white/10 bg-[#161616] flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+        <div className="p-4 sm:p-6 border-t border-white/[0.08] bg-[#070D18] flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
           <button
             onClick={onClose}
             className="text-xs uppercase tracking-wider font-semibold text-white/60 hover:text-white flex items-center gap-1.5"
@@ -196,7 +196,7 @@ export function CaseStudyModal({ caseStudy, onClose, onNavigateToContact }: Case
               onClose();
               onNavigateToContact();
             }}
-            className="w-full sm:w-auto px-6 py-3 text-xs font-bold uppercase tracking-widest text-black bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-colors text-center"
+            className="w-full sm:w-auto px-6 py-3 text-xs font-bold uppercase tracking-widest text-black bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-colors text-center shadow-md"
           >
             Consult Dickson On Your Project
           </button>

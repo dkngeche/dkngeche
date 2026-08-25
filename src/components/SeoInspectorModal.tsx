@@ -21,20 +21,20 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
 
   return (
     <div
-      className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fadeIn"
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-fadeIn"
       role="dialog"
       aria-modal="true"
       aria-labelledby="seo-inspector-title"
     >
-      <div className="bg-[#121212] border border-white/15 w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden my-6 max-h-[90vh] flex flex-col">
+      <div className="bg-[#0B1626] border border-white/[0.12] w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden my-6 max-h-[90vh] flex flex-col">
         {/* Modal Header */}
-        <div className="p-5 border-b border-white/10 bg-[#161616] flex items-center justify-between">
+        <div className="p-5 border-b border-white/[0.08] bg-[#070D18] flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="p-2 rounded-md bg-[#C5A358]/10 text-[#C5A358] border border-[#C5A358]/30">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 id="seo-inspector-title" className="text-base font-semibold text-[#E8E8E8]">
+              <h3 id="seo-inspector-title" className="text-base font-bold text-[#E8E8E8]">
                 Live SEO Architecture &amp; Schema Inspector
               </h3>
               <p className="text-xs text-white/50">
@@ -53,7 +53,7 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
         </div>
 
         {/* Tab Selector */}
-        <div className="flex border-b border-white/10 bg-[#161616] px-5 pt-3 gap-2 overflow-x-auto">
+        <div className="flex border-b border-white/[0.08] bg-[#070D18] px-5 pt-3 gap-2 overflow-x-auto">
           <button
             onClick={() => setActiveTab('schema')}
             className={`pb-2.5 px-3 text-xs font-semibold tracking-wide border-b-2 flex items-center gap-1.5 whitespace-nowrap ${
@@ -101,7 +101,7 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
         </div>
 
         {/* Tab Body */}
-        <div className="p-6 overflow-y-auto space-y-4 bg-[#121212]">
+        <div className="p-6 overflow-y-auto space-y-4 bg-[#0B1626]">
           {activeTab === 'schema' && (
             <div className="space-y-3">
               <div className="text-xs text-white/60 flex items-center justify-between">
@@ -110,7 +110,7 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
                   Valid Schema.org
                 </span>
               </div>
-              <div className="bg-[#0A0A0A] border border-white/10 text-emerald-300/90 p-4 rounded-lg font-mono text-xs overflow-x-auto max-h-[350px]">
+              <div className="bg-[#050911] border border-white/[0.08] text-emerald-300/90 p-4 rounded-xl font-mono text-xs overflow-x-auto max-h-[350px]">
                 <pre>{JSON.stringify(currentSchema, null, 2)}</pre>
               </div>
             </div>
@@ -118,25 +118,25 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
 
           {activeTab === 'meta' && (
             <div className="space-y-4">
-              <div className="bg-[#181818] border border-white/10 rounded-xl p-4 space-y-2">
+              <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-4 space-y-2">
                 <span className="text-[11px] font-mono text-[#C5A358] font-semibold uppercase">Dynamic Title Tag:</span>
                 <div className="text-sm font-semibold text-[#E8E8E8]">{currentTitle}</div>
                 <div className="text-[11px] text-white/40">{currentTitle.length} characters (Optimal range: 50-60)</div>
               </div>
 
-              <div className="bg-[#181818] border border-white/10 rounded-xl p-4 space-y-2">
+              <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-4 space-y-2">
                 <span className="text-[11px] font-mono text-[#C5A358] font-semibold uppercase">Dynamic Meta Description:</span>
                 <div className="text-xs sm:text-sm text-white/80 leading-relaxed">{currentDesc}</div>
                 <div className="text-[11px] text-white/40">{currentDesc.length} characters (Optimal range: 140-160)</div>
               </div>
 
-              <div className="bg-[#181818] border border-white/10 rounded-xl p-4 space-y-2">
+              <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-4 space-y-2">
                 <span className="text-[11px] font-mono text-[#C5A358] font-semibold uppercase">Open Graph / Social Protocol:</span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
-                  <div className="bg-[#222222] p-2 rounded border border-white/10">
+                  <div className="bg-[#162234] p-2 rounded border border-white/[0.08]">
                     <span className="text-white/40">og:type:</span> <span className="font-mono font-medium text-white/90">website</span>
                   </div>
-                  <div className="bg-[#222222] p-2 rounded border border-white/10">
+                  <div className="bg-[#162234] p-2 rounded border border-white/[0.08]">
                     <span className="text-white/40">twitter:card:</span> <span className="font-mono font-medium text-white/90">summary_large_image</span>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
               <p className="text-xs text-white/60">
                 Every page on this site implements strict semantic document hierarchy, ensuring search crawlers parse contextual relationships effortlessly:
               </p>
-              <div className="bg-[#181818] border border-white/10 rounded-xl p-4 space-y-2.5 text-xs text-white/80">
+              <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-4 space-y-2.5 text-xs text-white/80">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
@@ -180,18 +180,18 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
 
           {activeTab === 'vitals' && (
             <div className="space-y-3">
-              <div className="bg-[#181818] border border-white/10 rounded-xl p-4 space-y-3">
+              <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-4 space-y-3">
                 <div className="text-xs font-mono font-bold text-[#C5A358] uppercase">Core Web Vitals Engineering</div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="bg-[#222222] border border-white/10 p-3 rounded-lg text-center">
+                  <div className="bg-[#162234] border border-white/[0.08] p-3 rounded-lg text-center">
                     <div className="text-base font-bold text-emerald-400">LCP &lt; 1.2s</div>
                     <div className="text-[11px] text-white/50 mt-0.5">Largest Contentful Paint</div>
                   </div>
-                  <div className="bg-[#222222] border border-white/10 p-3 rounded-lg text-center">
+                  <div className="bg-[#162234] border border-white/[0.08] p-3 rounded-lg text-center">
                     <div className="text-base font-bold text-emerald-400">INP &lt; 50ms</div>
                     <div className="text-[11px] text-white/50 mt-0.5">Interaction to Next Paint</div>
                   </div>
-                  <div className="bg-[#222222] border border-white/10 p-3 rounded-lg text-center">
+                  <div className="bg-[#162234] border border-white/[0.08] p-3 rounded-lg text-center">
                     <div className="text-base font-bold text-emerald-400">CLS: 0.00</div>
                     <div className="text-[11px] text-white/50 mt-0.5">Cumulative Layout Shift</div>
                   </div>
@@ -205,7 +205,7 @@ export function SeoInspectorModal({ isOpen, onClose, currentPage, currentCaseStu
         </div>
 
         {/* Modal Footer */}
-        <div className="p-4 border-t border-white/10 bg-[#161616] flex justify-end">
+        <div className="p-4 border-t border-white/[0.08] bg-[#070D18] flex justify-end">
           <button
             onClick={onClose}
             className="px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white/80 hover:text-white hover:bg-white/10 border border-white/15 rounded-md transition-colors"

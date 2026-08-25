@@ -22,9 +22,9 @@ export function ContactPage() {
     email: '',
     company: '',
     website: '',
-    servicesNeeded: ['Digital Strategy'],
+    servicesNeeded: ['Digital Strategy & Growth'],
     projectDescription: '',
-    budgetRange: 'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
+    budgetRange: 'BUILD — KES 60,000–180,000 (Websites, digital strategy & brand foundations)',
     preferredContact: 'email'
   });
 
@@ -40,22 +40,26 @@ export function ContactPage() {
     : 'https://formbold.com/s/obz91';
 
   const serviceOptions = [
-    'Digital Strategy & Roadmap',
-    'SEO & Organic Visibility',
+    'Digital Strategy & Growth',
+    'Web Strategy & Digital Experience',
+    'Search Strategy & Organic Growth (SEO)',
+    'Digital Brand & Online Presence',
+    'Ongoing Digital Advisory',
     'Technical SEO Audit',
-    'Digital Positioning & Proposition',
-    'Website Strategy & IA',
-    'Content Strategy & Topical Silos',
-    'Conversion Optimisation (CRO)',
-    'Comprehensive Advisory'
+    'Website Redesign & Conversion',
+    'Custom Digital Challenge'
   ];
 
   const budgetOptions = [
-    'DIGITAL CLARITY — $350 (Audit + diagnosis + recommendations)',
-    'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
-    'DIGITAL GROWTH PARTNER — $800–$2,000/month (Ongoing SEO + digital strategy + optimisation + advisory)',
-    'À LA CARTE / SPECIFIC SERVICE (e.g. SEO Audit $350, Tech SEO $400, Strategy $500)',
-    'NOT SURE YET / CUSTOM (Let’s diagnose the problem on a discovery call)'
+    'START — KES 15,000–40,000 (Diagnostics, audits, focused strategy & reviews)',
+    'BUILD — KES 60,000–180,000 (Websites, digital strategy & brand foundations)',
+    'GROW — KES 60,000–200,000+/mo (Ongoing SEO, digital growth & advisory partner)',
+    'DIGITAL STRATEGY & GROWTH — From KES 50,000',
+    'WEB STRATEGY & DIGITAL EXPERIENCE — From KES 60,000',
+    'SEARCH STRATEGY & ORGANIC GROWTH — From KES 35,000/month',
+    'DIGITAL BRAND & ONLINE PRESENCE — From KES 40,000',
+    'DIGITAL ADVISORY RETAINER — From KES 50,000/month',
+    'CUSTOM / BESPOKE SCOPE (Let’s diagnose and tailor during discovery)'
   ];
 
   const handleServiceToggle = (service: string) => {
@@ -160,27 +164,27 @@ export function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left: Contact Info & Engagement Expectation */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-[#121212] border border-white/10 rounded-2xl p-8 space-y-6 shadow-xl">
+            <div className="bg-[#0B1626] border border-white/[0.08] rounded-2xl p-8 space-y-6 shadow-xl">
               <div className="space-y-2">
                 <span className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
                   Direct Advisory Channel
                 </span>
-                <h2 className="font-editorial text-2xl text-[#E8E8E8] font-semibold">
+                <h2 className="font-editorial text-2xl text-[#F5F6F8] font-semibold">
                   Dickson Ngeche
                 </h2>
                 <p className="text-xs text-white/50">
-                  Independent Digital Strategy &amp; SEO Consultant
+                  Independent Digital Strategy &amp; Growth Consultant
                 </p>
               </div>
 
-              <div className="space-y-4 pt-2 border-t border-white/10 text-sm text-white/70">
+              <div className="space-y-4 pt-2 border-t border-white/[0.08] text-sm text-white/70">
                 <div className="flex items-start gap-3">
                   <Mail className="w-4 h-4 text-[#C5A358] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs text-white/40">Direct Email:</div>
                     <a
                       href="mailto:dkngeche@gmail.com"
-                      className="font-semibold text-[#E8E8E8] hover:text-[#C5A358] transition-colors underline decoration-dotted"
+                      className="font-semibold text-[#F5F6F8] hover:text-[#C5A358] transition-colors underline decoration-dotted"
                     >
                       dkngeche@gmail.com
                     </a>
@@ -191,7 +195,7 @@ export function ContactPage() {
                   <MapPin className="w-4 h-4 text-[#C5A358] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs text-white/40">Headquarters &amp; Scope:</div>
-                    <div className="font-medium text-[#E8E8E8]">
+                    <div className="font-medium text-[#F5F6F8]">
                       Nairobi, Kenya &bull; Global Remote Consultation
                     </div>
                   </div>
@@ -201,7 +205,7 @@ export function ContactPage() {
                   <Clock className="w-4 h-4 text-[#C5A358] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs text-white/40">Response Time:</div>
-                    <div className="font-medium text-[#E8E8E8]">
+                    <div className="font-medium text-[#F5F6F8]">
                       Typically within 24 business hours
                     </div>
                   </div>
@@ -215,7 +219,7 @@ export function ContactPage() {
                       href="https://linkedin.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-medium text-[#E8E8E8] hover:text-[#C5A358] flex items-center gap-1"
+                      className="font-medium text-[#F5F6F8] hover:text-[#C5A358] flex items-center gap-1"
                     >
                       <span>LinkedIn Profile</span>
                       <ArrowUpRight className="w-3 h-3" />
@@ -226,44 +230,50 @@ export function ContactPage() {
             </div>
 
             {/* Engagement Frameworks Summary */}
-            <div className="bg-[#181818] border border-white/10 rounded-2xl p-6 sm:p-8 space-y-4 shadow-xl">
-              <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
-                Engagement Frameworks
+            <div className="bg-[#0B1626] border border-white/[0.08] rounded-2xl p-6 sm:p-8 space-y-4 shadow-xl">
+              <div className="flex items-center justify-between">
+                <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
+                  Engagement Frameworks
+                </div>
+                <span className="text-[11px] font-mono text-white/40">Investment Starting Points</span>
               </div>
               <div className="space-y-3 text-xs sm:text-sm">
-                <div className="p-3 rounded-lg bg-white/[0.02] border border-white/5 space-y-1">
+                <div className="p-3.5 rounded-lg bg-[#070D18] border border-white/[0.06] space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-white">Digital Clarity</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From $350</span>
+                    <span className="font-semibold text-white">START (Clarity &amp; Audits)</span>
+                    <span className="font-mono text-xs text-[#C5A358] font-bold">KES 15K – 40K</span>
                   </div>
-                  <p className="text-[11px] text-white/50">Audit + diagnosis + recommendations</p>
+                  <p className="text-[11px] text-white/55">Diagnostics, audits, focused strategy &amp; digital reviews</p>
                 </div>
-                <div className="p-3 rounded-lg bg-[#C5A358]/10 border border-[#C5A358]/20 space-y-1">
+                <div className="p-3.5 rounded-lg bg-[#070D18] border border-white/[0.06] space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-white">Digital Strategy</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From $1,000</span>
+                    <span className="font-semibold text-white">BUILD (Web &amp; Brand)</span>
+                    <span className="font-mono text-xs text-[#C5A358] font-bold">KES 60K – 180K</span>
                   </div>
-                  <p className="text-[11px] text-white/70">Positioning + audience + website + SEO + 90-day roadmap</p>
+                  <p className="text-[11px] text-white/55">Websites, digital strategy &amp; brand positioning foundations</p>
                 </div>
-                <div className="p-3 rounded-lg bg-white/[0.02] border border-white/5 space-y-1">
+                <div className="p-3.5 rounded-lg bg-[#162234] border border-[#C5A358]/30 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-white">Digital Growth Partner</span>
-                    <span className="font-mono text-xs text-[#C5A358]">From $800/mo</span>
+                    <span className="font-semibold text-white">GROW (Advisory &amp; SEO)</span>
+                    <span className="font-mono text-xs text-[#C5A358] font-bold">From KES 50K/mo</span>
                   </div>
-                  <p className="text-[11px] text-white/50">Ongoing SEO + digital strategy + optimisation + advisory</p>
+                  <p className="text-[11px] text-white/70">Ongoing SEO, continuous growth &amp; senior advisory partner</p>
                 </div>
               </div>
+              <p className="text-[11px] text-white/40 leading-relaxed pt-1">
+                Final scope and investment are shaped around the complexity, objectives and requirements of each engagement.
+              </p>
             </div>
 
             {/* What to Expect Next Box */}
-            <div className="bg-[#181818] border border-white/10 rounded-2xl p-6 sm:p-8 space-y-4 shadow-xl">
+            <div className="bg-[#0B1626] border border-white/[0.08] rounded-2xl p-6 sm:p-8 space-y-4 shadow-xl">
               <div className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
                 What Happens Next
               </div>
               <ul className="space-y-3 text-xs sm:text-sm text-white/70">
                 <li className="flex items-start gap-2.5">
                   <span className="font-mono font-bold text-[#C5A358]">1.</span>
-                  <span><strong className="text-white/90">Initial Review:</strong> I personally review your website, market space, and current search footprint.</span>
+                  <span><strong className="text-white/90">Initial Review:</strong> I personally review your website, market space, and current digital footprint.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="font-mono font-bold text-[#C5A358]">2.</span>
@@ -271,7 +281,7 @@ export function ContactPage() {
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="font-mono font-bold text-[#C5A358]">3.</span>
-                  <span><strong className="text-white/90">Strategic Proposal:</strong> A clear scope outlining deliverables, roadmap, and pricing—no generic templates.</span>
+                  <span><strong className="text-white/90">Strategic Proposal:</strong> A clear scope outlining deliverables, roadmap, and investment—no generic templates.</span>
                 </li>
               </ul>
             </div>
@@ -280,7 +290,7 @@ export function ContactPage() {
           {/* Right: The Consultation Form or Success View */}
           <div className="lg:col-span-7">
             {submitted ? (
-              <div className="bg-[#121212] border-2 border-[#C5A358]/50 rounded-2xl p-8 sm:p-12 space-y-6 animate-fadeIn shadow-2xl">
+              <div className="bg-[#0B1626] border-2 border-[#C5A358]/50 rounded-2xl p-8 sm:p-12 space-y-6 animate-fadeIn shadow-2xl">
                 <div className="w-12 h-12 rounded-full bg-[#C5A358]/15 text-[#C5A358] flex items-center justify-center border border-[#C5A358]/30">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
@@ -289,7 +299,7 @@ export function ContactPage() {
                   <span className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
                     Inquiry Received
                   </span>
-                  <h2 className="font-editorial text-2xl sm:text-3xl text-[#E8E8E8] font-semibold">
+                  <h2 className="font-editorial text-2xl sm:text-3xl text-[#F5F6F8] font-semibold">
                     Thank you, {formData.name}.
                   </h2>
                   <p className="text-sm sm:text-base text-white/70 leading-relaxed">
@@ -298,14 +308,15 @@ export function ContactPage() {
                 </div>
 
                 {/* Summary of their submission */}
-                <div className="bg-[#181818] border border-white/10 rounded-xl p-5 space-y-2.5 text-xs text-white/70">
+                <div className="bg-[#070D18] border border-white/[0.08] rounded-xl p-5 space-y-2.5 text-xs text-white/70">
                   <div className="font-mono font-bold text-[#C5A358] uppercase text-[11px]">
                     Inquiry Summary
                   </div>
-                  <div><strong className="text-[#E8E8E8]">Company:</strong> {formData.company || 'Not specified'}</div>
-                  <div><strong className="text-[#E8E8E8]">Website:</strong> {formData.website || 'Not specified'}</div>
-                  <div><strong className="text-[#E8E8E8]">Services Selected:</strong> {formData.servicesNeeded.join(', ')}</div>
-                  <div><strong className="text-[#E8E8E8]">Preferred Channel:</strong> {formData.preferredContact.toUpperCase()}</div>
+                  <div><strong className="text-[#F5F6F8]">Company:</strong> {formData.company || 'Not specified'}</div>
+                  <div><strong className="text-[#F5F6F8]">Website:</strong> {formData.website || 'Not specified'}</div>
+                  <div><strong className="text-[#F5F6F8]">Services Selected:</strong> {formData.servicesNeeded.join(', ')}</div>
+                  <div><strong className="text-[#F5F6F8]">Investment Scope:</strong> {formData.budgetRange}</div>
+                  <div><strong className="text-[#F5F6F8]">Preferred Channel:</strong> {formData.preferredContact.toUpperCase()}</div>
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row gap-3">
@@ -317,9 +328,9 @@ export function ContactPage() {
                         email: '',
                         company: '',
                         website: '',
-                        servicesNeeded: ['Digital Strategy'],
+                        servicesNeeded: ['Digital Strategy & Growth'],
                         projectDescription: '',
-                        budgetRange: 'DIGITAL STRATEGY — $1,000–$1,750 (Positioning + audience + website + SEO + content + 90-day roadmap)',
+                        budgetRange: 'BUILD — KES 60,000–180,000 (Websites, digital strategy & brand foundations)',
                         preferredContact: 'email'
                       });
                     }}
@@ -330,7 +341,7 @@ export function ContactPage() {
 
                   <a
                     href="mailto:dkngeche@gmail.com"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-widest text-black bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-colors shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#070D18] bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-colors shadow-lg"
                   >
                     <span>Send Immediate Email Direct</span>
                     <Mail className="w-3.5 h-3.5" />
@@ -343,7 +354,7 @@ export function ContactPage() {
                 onSubmit={handleSubmit}
                 action={formboldEndpoint}
                 method="POST"
-                className="bg-[#121212] border border-white/10 rounded-2xl p-6 sm:p-10 space-y-6 shadow-2xl"
+                className="bg-[#0B1626] border border-white/[0.08] rounded-2xl p-6 sm:p-10 space-y-6 shadow-2xl"
               >
                 <div className="space-y-1 pb-4 border-b border-white/10">
                   <div className="flex items-center justify-between gap-2 flex-wrap">
@@ -404,7 +415,7 @@ export function ContactPage() {
                       value={formData.name}
                       onChange={e => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Sarah Mwangi"
-                      className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] placeholder-white/30 focus:bg-[#202020] focus:border-[#C5A358] transition-all"
+                      className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] placeholder-white/30 focus:bg-[#162234] focus:border-[#C5A358] transition-all"
                     />
                   </div>
 
@@ -420,7 +431,7 @@ export function ContactPage() {
                       value={formData.email}
                       onChange={e => setFormData({ ...formData, email: e.target.value })}
                       placeholder="e.g. sarah@company.com"
-                      className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] placeholder-white/30 focus:bg-[#202020] focus:border-[#C5A358] transition-all"
+                      className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] placeholder-white/30 focus:bg-[#162234] focus:border-[#C5A358] transition-all"
                     />
                   </div>
                 </div>
@@ -438,7 +449,7 @@ export function ContactPage() {
                       value={formData.company}
                       onChange={e => setFormData({ ...formData, company: e.target.value })}
                       placeholder="e.g. Acme Enterprise"
-                      className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] placeholder-white/30 focus:bg-[#202020] focus:border-[#C5A358] transition-all"
+                      className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] placeholder-white/30 focus:bg-[#162234] focus:border-[#C5A358] transition-all"
                     />
                   </div>
 
@@ -453,7 +464,7 @@ export function ContactPage() {
                       value={formData.website}
                       onChange={e => setFormData({ ...formData, website: e.target.value })}
                       placeholder="e.g. https://company.com"
-                      className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] placeholder-white/30 focus:bg-[#202020] focus:border-[#C5A358] transition-all"
+                      className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] placeholder-white/30 focus:bg-[#162234] focus:border-[#C5A358] transition-all"
                     />
                   </div>
                 </div>
@@ -473,7 +484,7 @@ export function ContactPage() {
                           onClick={() => handleServiceToggle(opt)}
                           className={`px-3.5 py-1.5 rounded-md text-xs font-medium transition-all ${
                             selected
-                              ? 'bg-[#C5A358] text-black font-semibold shadow-md'
+                              ? 'bg-[#C5A358] text-[#070D18] font-bold shadow-md'
                               : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10 hover:text-white'
                           }`}
                         >
@@ -497,7 +508,7 @@ export function ContactPage() {
                     value={formData.projectDescription}
                     onChange={e => setFormData({ ...formData, projectDescription: e.target.value })}
                     placeholder="What does your business offer? What are your current challenges with digital presence, SEO, or positioning? What outcomes are you seeking?"
-                    className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] placeholder-white/30 focus:bg-[#202020] focus:border-[#C5A358] transition-all leading-relaxed"
+                    className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] placeholder-white/30 focus:bg-[#162234] focus:border-[#C5A358] transition-all leading-relaxed"
                   />
                 </div>
 
@@ -511,10 +522,10 @@ export function ContactPage() {
                     name="budgetRange"
                     value={formData.budgetRange}
                     onChange={e => setFormData({ ...formData, budgetRange: e.target.value })}
-                    className="w-full px-3.5 py-2.5 bg-[#181818] border border-white/15 rounded-md text-sm text-[#E8E8E8] focus:bg-[#202020] focus:border-[#C5A358] transition-all"
+                    className="w-full px-3.5 py-2.5 bg-[#070D18] border border-white/[0.12] rounded-md text-sm text-[#F5F6F8] focus:bg-[#162234] focus:border-[#C5A358] transition-all"
                   >
                     {budgetOptions.map(b => (
-                      <option key={b} value={b} className="bg-[#181818] text-[#E8E8E8]">{b}</option>
+                      <option key={b} value={b} className="bg-[#070D18] text-[#F5F6F8]">{b}</option>
                     ))}
                   </select>
                 </div>
@@ -536,8 +547,8 @@ export function ContactPage() {
                         onClick={() => setFormData({ ...formData, preferredContact: method.id as any })}
                         className={`py-2.5 px-3 rounded-md text-xs font-bold transition-all text-center border ${
                           formData.preferredContact === method.id
-                            ? 'bg-[#C5A358] text-black border-[#C5A358] shadow-md'
-                            : 'bg-[#181818] text-white/60 border-white/10 hover:bg-white/5 hover:text-white'
+                            ? 'bg-[#C5A358] text-[#070D18] border-[#C5A358] shadow-md'
+                            : 'bg-[#070D18] text-white/60 border-white/10 hover:bg-white/5 hover:text-white'
                         }`}
                       >
                         {method.label}
@@ -552,7 +563,7 @@ export function ContactPage() {
                     id="submit-contact-form-btn"
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-4 text-xs uppercase tracking-widest font-bold text-black bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-all shadow-lg disabled:opacity-50"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-4 text-xs uppercase tracking-widest font-bold text-[#070D18] bg-[#C5A358] hover:bg-[#D4B46A] rounded-md transition-all shadow-lg disabled:opacity-50"
                   >
                     {loading ? (
                       <span className="flex items-center gap-2">

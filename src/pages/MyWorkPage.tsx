@@ -29,9 +29,9 @@ export function MyWorkPage({ onNavigate, onSelectCaseStudy }: MyWorkPageProps) {
   return (
     <div className="space-y-20 sm:space-y-28 pb-20">
       {/* PAGE HEADER */}
-      <section className="pt-12 sm:pt-16 border-b border-white/10 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono tracking-wider text-[#C5A358] bg-[#C5A358]/10 border border-[#C5A358]/30">
+      <section className="pt-12 sm:pt-16 border-b border-white/[0.08] pb-16 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-mono tracking-wider text-[#C5A358] bg-[#C5A358]/10 border border-[#C5A358]/30 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-[#C5A358] animate-pulse"></span>
             <span>Case Studies &amp; Track Record</span>
           </div>
@@ -43,7 +43,7 @@ export function MyWorkPage({ onNavigate, onSelectCaseStudy }: MyWorkPageProps) {
             <p className="font-editorial text-2xl sm:text-3xl text-[#C5A358] italic font-normal">
               Strategy, execution and measurable digital progress.
             </p>
-            <p className="text-base sm:text-lg text-white/70 max-w-3xl leading-relaxed pt-2">
+            <p className="text-base sm:text-lg text-white/75 max-w-3xl leading-relaxed pt-2">
               Explore how I approach client challenges across search engine optimization, digital positioning, customer journey architecture, and organic discovery. Every project is rooted in commercial thinking rather than superficial vanity metrics.
             </p>
           </div>
@@ -62,8 +62,8 @@ export function MyWorkPage({ onNavigate, onSelectCaseStudy }: MyWorkPageProps) {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-3.5 py-1.5 rounded-md text-xs font-mono transition-all ${
                     isActive
-                      ? 'bg-[#C5A358] text-black font-semibold shadow-md'
-                      : 'bg-white/5 border border-white/10 text-white/60 hover:bg-white/10 hover:text-white'
+                      ? 'bg-[#C5A358] text-black font-bold shadow-md'
+                      : 'bg-[#0B1626] border border-white/[0.08] text-white/60 hover:bg-[#162234] hover:text-white'
                   }`}
                 >
                   {cat}
@@ -93,7 +93,7 @@ export function MyWorkPage({ onNavigate, onSelectCaseStudy }: MyWorkPageProps) {
           </div>
 
           {filteredStudies.length === 0 && (
-            <div className="p-12 text-center bg-[#121212] border border-white/10 rounded-xl">
+            <div className="p-12 text-center bg-[#0B1626] border border-white/[0.08] rounded-xl">
               <p className="text-sm text-white/60">No case studies match this specific filter.</p>
               <button
                 onClick={() => setSelectedCategory('All')}
@@ -108,16 +108,16 @@ export function MyWorkPage({ onNavigate, onSelectCaseStudy }: MyWorkPageProps) {
 
       {/* METHODOLOGY REMINDER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#121212] border border-white/10 rounded-2xl p-8 sm:p-12 shadow-xl">
+        <div className="bg-[#0B1626]/90 border border-white/[0.08] rounded-2xl p-8 sm:p-12 shadow-2xl backdrop-blur-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-3">
               <span className="text-xs font-mono uppercase tracking-widest text-[#C5A358] font-bold">
                 Integrity in Reporting
               </span>
-              <h3 className="font-editorial text-2xl sm:text-3xl text-[#E8E8E8] font-semibold">
+              <h3 className="font-editorial text-2xl sm:text-3xl text-[#E8E8E8] font-bold">
                 No Fabricated Metrics or Artificial Hype.
               </h3>
-              <p className="text-sm sm:text-base text-white/60 leading-relaxed">
+              <p className="text-sm sm:text-base text-white/65 leading-relaxed">
                 I do not invent exaggerated percentages or unverifiable claims. Case studies document the genuine strategic challenge, the specific architectural work delivered, and verified search indexation results.
               </p>
             </div>

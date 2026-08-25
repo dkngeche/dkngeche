@@ -4,89 +4,142 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   {
     id: 'digital-strategy',
     number: '01',
-    title: 'Digital Strategy',
-    tagline: 'Turn business objectives into a practical digital roadmap.',
+    title: 'Digital Strategy & Growth',
+    tagline: 'Help businesses understand where they are digitally, where they need to go and how to get there.',
+    coreMessage: 'High-level consulting to build durable digital foundations and compound commercial outcomes.',
     description: 'Before jumping into tactical execution, we define how your digital presence supports your commercial objectives. We identify who you are targeting, how they make decisions, and where your digital investments will have the highest compounding return.',
+    services: [
+      'Digital strategy development',
+      'Digital presence audits',
+      'Digital growth planning',
+      'Digital transformation roadmaps',
+      'Digital marketing strategy',
+      'Digital customer journey optimisation',
+      'Digital performance analysis',
+      'Competitor and market analysis',
+      'Technology and platform recommendations',
+      'Digital roadmap development'
+    ],
     deliverables: [
-      'Digital strategy & multi-quarter roadmaps',
-      'Audience & target market analysis',
-      'Digital positioning & competitive differentiation',
-      'Customer journey & decision-stage mapping',
-      'Channel selection & acquisition strategy',
-      'Digital growth planning & metric models'
+      'Comprehensive Digital Audit & Baseline Diagnostic',
+      'Multi-Quarter Digital Strategic Roadmap',
+      'Commercial Audience & Buyer Journey Architecture',
+      'Channel Selection & Resource Allocation Model',
+      'Competitive & Market Landscape Analysis',
+      'Technology Stack & Digital Tooling Blueprints'
     ],
     businessOutcomes: [
-      'Zero wasted spend on misaligned marketing channels',
+      'Zero wasted spend on disjointed marketing channels',
       'Clear, quantified commercial priorities for all digital initiatives',
-      'Unified direction across leadership, sales, and product teams'
+      'Unified strategic direction across executive leadership, sales, and operations'
     ],
-    deliverableFocus: 'Strategic Clarity'
+    deliverableFocus: 'Highest-Level Strategic Advisory'
   },
   {
-    id: 'seo-visibility',
+    id: 'web-strategy',
     number: '02',
-    title: 'SEO & Organic Visibility',
-    tagline: 'Become discoverable when your target audience is actively searching for solutions.',
-    description: 'Visibility is not just having an online presence—it is ensuring that when high-intent prospects search for what you do, your business is the one they discover, understand, and trust. We build search architectures that capture demand at every stage of consideration.',
+    title: 'Web Strategy & Digital Experience',
+    tagline: 'Your website should be more than a digital brochure. It should work as part of your business.',
+    coreMessage: 'Building digital experiences that serve explicit business objectives and convert attention into qualified pipeline.',
+    description: 'A website should not simply look attractive—it must function as a high-performing business instrument. We design and architect web experiences that clarify your value, remove friction from user journeys, and actively advance commercial conversions.',
+    services: [
+      'Website strategy',
+      'Website architecture & sitemaps',
+      'UX/UI design & wireframing',
+      'Corporate & enterprise websites',
+      'High-impact business websites',
+      'High-conversion landing pages',
+      'Website development & modern implementation',
+      'Website redesign & modernisation',
+      'Website performance optimisation',
+      'Conversion rate optimisation (CRO)',
+      'Digital platform strategy',
+      'User experience improvements'
+    ],
     deliverables: [
-      'Comprehensive SEO & search intent audits',
-      'Technical SEO & crawl efficiency optimisation',
-      'On-page SEO & semantic structure refinement',
-      'Keyword research & high-intent opportunity mapping',
-      'Local & regional SEO optimisation',
-      'Content architecture & topical authority clustering',
-      'Search performance optimisation & indexation health',
-      'Executive SEO performance reporting & telemetry'
+      'Information Architecture & Navigation Flow Blueprints',
+      'Conversion-Focused Wireframes & Interactive Prototypes',
+      'Bespoke High-Performance Website Builds',
+      'Core Web Vitals & Speed Optimization Packages',
+      'Friction Removal & Funnel Optimization Reports',
+      'Design System & Component Guidelines'
     ],
     businessOutcomes: [
-      'Consistent inbound discovery from qualified, search-intent buyers',
-      'Long-term reduction in customer acquisition costs (CAC)',
-      'High-authority positioning on the industry terms that drive real revenue'
+      'Immediate visitor comprehension of your core proposition within seconds',
+      'Higher inquiry and lead conversion rates from qualified decision-makers',
+      'A resilient, scalable digital asset that elevates brand stature and commercial credibility'
     ],
-    deliverableFocus: 'Organic Authority'
+    deliverableFocus: 'Operational Web Assets'
   },
   {
-    id: 'digital-positioning',
+    id: 'search-strategy',
     number: '03',
-    title: 'Digital Positioning & Presence',
-    tagline: 'Translate complex business value into a digital proposition that resonates immediately.',
-    description: 'Many capable businesses lose opportunities simply because their online presence fails to articulate what they do clearly. We take your core capabilities, products, or service offerings and translate them into sharp, compelling digital messaging and structured customer experiences.',
+    title: 'Search Strategy & Organic Growth',
+    tagline: 'Helping businesses become more visible, discoverable and competitive in search.',
+    coreMessage: 'Positioning SEO as a strategic growth discipline rather than a superficial technical checklist.',
+    description: 'Visibility is not just having an online presence—it is ensuring that when high-intent prospects search for what you do, your business is the one they discover, understand, and trust. We build search architectures that capture demand at every stage of consideration.',
+    services: [
+      'Technical SEO & site architecture audits',
+      'On-page SEO & semantic structure refinement',
+      'Keyword research & search intent mapping',
+      'Topical authority & content strategy',
+      'Local SEO & regional discovery',
+      'E-commerce SEO architecture',
+      'Competitor SEO analysis & benchmarking',
+      'Search visibility strategy & indexation health',
+      'Organic traffic growth modeling',
+      'Search performance measurement & telemetry'
+    ],
     deliverables: [
-      'Core value proposition development',
-      'Digital messaging & clarity frameworks',
-      'Information architecture & sitemap design',
-      'Content architecture & narrative flow',
-      'Brand-to-digital translation & narrative cohesion',
-      'Digital customer experience (CX) structuring',
-      'High-conversion website strategy'
+      'Exhaustive Technical SEO & Indexation Health Audits',
+      'High-Intent Keyword & Search Opportunity Matrix',
+      'Topical Authority Pillar & Cluster Architecture',
+      'Structured Data & Schema.org Semantic Markup',
+      'Local & Regional Search Footprint Optimization',
+      'Executive Search Telemetry & Attribution Reporting'
     ],
     businessOutcomes: [
-      'Instant comprehension by first-time website visitors',
-      'Higher engagement from qualified institutional and enterprise buyers',
-      'A website that functions as your highest-performing sales partner'
+      'Compounding, high-intent inbound organic discovery that reduces ad dependency',
+      'Sustainable dominance on high-commercial-value industry search queries',
+      'Clear, defensible search market share across key business offerings'
     ],
-    deliverableFocus: 'Proposition Clarity'
+    deliverableFocus: 'Strategic Organic Visibility'
   },
   {
-    id: 'digital-execution',
+    id: 'digital-brand',
     number: '04',
-    title: 'Digital Execution & Growth',
-    tagline: 'Move from strategic design into purposeful, measurable execution.',
-    description: 'Strategy without rigorous execution is just theory. We provide hands-on direction for digital implementation, ensuring your website, content assets, analytics, and conversion paths operate as a unified growth engine.',
+    title: 'Digital Brand & Online Presence',
+    tagline: 'Your digital presence should reflect the quality of the business behind it.',
+    coreMessage: 'Helping businesses and leadership establish credible, authoritative digital identities.',
+    description: 'Many capable businesses lose opportunities simply because their online presence fails to articulate what they do clearly. We build cohesive digital identities, messaging hierarchies, and reputation frameworks that earn instant trust from clients and partners.',
+    services: [
+      'Digital brand positioning',
+      'Online brand strategy',
+      'Brand messaging & value proposition frameworks',
+      'Digital presence development',
+      'Social media presence strategy',
+      'Content direction & editorial standards',
+      'Digital reputation management',
+      'Google Business Profile optimisation',
+      'Executive & personal branding for founders/leaders',
+      'Business profile & directory optimisation',
+      'Digital communication strategy',
+      'Brand consistency across digital platforms'
+    ],
     deliverables: [
-      'Website implementation direction & UX QA',
-      'Search-grounded content planning & editorial workflows',
-      'Digital campaign strategy & channel orchestration',
-      'Analytics setup, event tracking & performance telemetry',
-      'Conversion rate optimisation (CRO) & funnel friction removal',
-      'Ongoing strategic advisory & quarterly growth iteration'
+      'Core Value Proposition & Messaging Framework',
+      'Digital Brand Identity & Platform Style Guides',
+      'Executive Thought Leadership & Content Direction',
+      'Verified Google Business Profile & Directory Optimization',
+      'Multi-Platform Channel Cohesion Protocols',
+      'Digital Reputation & Trust Signal Architecture'
     ],
     businessOutcomes: [
-      'Flawless bridge between strategic roadmaps and live execution',
-      'Accurate data infrastructure to measure actual revenue attribution',
-      'Continuous compounding improvements across traffic, engagement, and leads'
+      'Instant brand authority and credibility with prospective enterprise clients',
+      'Consistent, unmistakable brand voice across every digital touchpoint',
+      'A commanding digital footprint that matches the true caliber of your organization'
     ],
-    deliverableFocus: 'Measurable Growth'
+    deliverableFocus: 'Credible Digital Authority'
   }
 ];
 
@@ -174,85 +227,140 @@ export const JOURNEY_STAGES: JourneyStage[] = [
 ];
 
 export const CAPABILITIES: CapabilityItem[] = [
+  // 01 — Digital Strategy & Growth
   {
-    id: 'digital-strategy',
-    name: 'Digital Strategy',
+    id: 'digital-strategy-development',
+    name: 'Digital Strategy Development',
     pillar: 'digital-strategy',
     description: 'Crafting practical, phased digital roadmaps that translate ambitious commercial goals into structured online initiatives.',
     whyItMatters: 'Without a coherent strategy, businesses burn budget on disjointed tactics that generate activity without revenue.',
     keyOutputs: ['Multi-phase Digital Roadmap', 'Audience Segmentation Model', 'Resource & Channel Allocation Matrix']
   },
   {
-    id: 'seo',
-    name: 'Search Engine Optimisation (SEO)',
-    pillar: 'seo-visibility',
-    description: 'Full-spectrum search strategy designed to rank your business at the precise moment high-intent buyers are searching.',
-    whyItMatters: 'Paid advertising stops the moment your budget runs out. Organic search builds a compounding asset that delivers qualified demand continuously.',
-    keyOutputs: ['Holistic Search Strategy', 'Topical Authority Plan', 'Continuous Ranking & Visibility Reports']
+    id: 'digital-presence-audits',
+    name: 'Digital Presence & Asset Audits',
+    pillar: 'digital-strategy',
+    description: 'Comprehensive diagnostic evaluation of your website, search footprint, content ecosystem, and digital customer journeys.',
+    whyItMatters: 'Uncovers hidden bottlenecks, broken conversion pathways, and untapped market opportunities.',
+    keyOutputs: ['Holistic Digital Audit Report', 'Friction Point Catalog', 'Prioritized Remediation Matrix']
   },
   {
+    id: 'digital-growth-planning',
+    name: 'Digital Growth Planning',
+    pillar: 'digital-strategy',
+    description: 'Building sustainable, compounding customer acquisition frameworks across organic, owned, and referral channels.',
+    whyItMatters: 'Growth should be predictable and resilient against algorithm fluctuations or volatile advertising costs.',
+    keyOutputs: ['Growth Velocity Playbook', 'Acquisition Channel Modeling', 'Milestone Forecasts']
+  },
+  {
+    id: 'digital-transformation-roadmaps',
+    name: 'Digital Transformation Roadmaps',
+    pillar: 'digital-strategy',
+    description: 'Guiding established businesses through the modernization of legacy customer touchpoints and online workflows.',
+    whyItMatters: 'Ensures technological investments directly serve business agility, customer satisfaction, and operational efficiency.',
+    keyOutputs: ['Transformation Blueprint', 'Technology Stack Recommendations', 'Phased Implementation Timelines']
+  },
+
+  // 02 — Web Strategy & Digital Experience
+  {
+    id: 'website-strategy',
+    name: 'Website Strategy & Architecture',
+    pillar: 'web-strategy',
+    description: 'Structuring your website as an intelligent commercial instrument rather than a passive brochure.',
+    whyItMatters: 'A website should guide visitors smoothly from initial curiosity to qualified inquiry with minimal friction.',
+    keyOutputs: ['Information Architecture (IA)', 'Sitemap Hierarchy', 'Decision-Stage User Pathways']
+  },
+  {
+    id: 'ux-ui-design',
+    name: 'UX/UI & Digital Experience Design',
+    pillar: 'web-strategy',
+    description: 'Crafting purposeful, visually commanding interfaces tailored to decision-maker psychology and effortless navigation.',
+    whyItMatters: 'Poor user experience repels premium buyers. Refined design commands confidence and elevates perceived value.',
+    keyOutputs: ['Interactive Prototypes', 'Responsive Layout System', 'Component Design System']
+  },
+  {
+    id: 'corporate-business-websites',
+    name: 'Corporate & Business Website Development',
+    pillar: 'web-strategy',
+    description: 'Engineering fast, secure, accessible web platforms built with modern technology and spotless code standards.',
+    whyItMatters: 'Technical reliability and blistering speed form the foundation of both user satisfaction and search ranking success.',
+    keyOutputs: ['Production Web Build', 'CMS Integration', 'Responsive Cross-Device Deployment']
+  },
+  {
+    id: 'conversion-optimisation',
+    name: 'Conversion Rate Optimisation (CRO)',
+    pillar: 'web-strategy',
+    description: 'Removing cognitive load, unclear copy, and navigation roadblocks to maximize the percentage of visitors who become qualified inquiries.',
+    whyItMatters: 'Doubling your conversion rate yields the same business outcome as doubling your traffic, at a fraction of the acquisition cost.',
+    keyOutputs: ['Conversion Friction Audit', 'CTA & Form Optimisation Plan', 'UX Clarity Recommendations']
+  },
+
+  // 03 — Search Strategy & Organic Growth
+  {
     id: 'technical-seo',
-    name: 'Technical SEO',
-    pillar: 'seo-visibility',
+    name: 'Technical SEO & Crawl Architecture',
+    pillar: 'search-strategy',
     description: 'Architecting site structure, crawl pathways, Core Web Vitals, and semantic schema markup for flawless search engine indexation.',
     whyItMatters: 'Even the most compelling content will fail if search engine spiders cannot crawl, parse, and render your website effortlessly.',
     keyOutputs: ['Technical Health Audit', 'Site Architecture & Internal Link Graph', 'Schema.org JSON-LD Implementation']
   },
   {
-    id: 'content-strategy',
-    name: 'Content Strategy',
-    pillar: 'seo-visibility',
-    description: 'Creating search-intent grounded content frameworks that answer prospect questions, educate decision-makers, and establish authority.',
-    whyItMatters: 'Content created for the sake of posting does not move needles. Content mapped to buyer intent captures searchers at critical decision moments.',
-    keyOutputs: ['Search Intent Content Blueprint', 'Topical Pillar & Cluster Map', 'Editorial Quality Guidelines']
+    id: 'search-intent-analysis',
+    name: 'Search Intent & Keyword Strategy',
+    pillar: 'search-strategy',
+    description: 'Identifying the exact high-commercial-value search queries prospects use when looking for your specific solutions.',
+    whyItMatters: 'Ranking for vanity keywords yields zero revenue. Ranking for commercial intent transforms search into a direct pipeline.',
+    keyOutputs: ['Commercial Intent Keyword Matrix', 'Search Volume & Difficulty Benchmarks', 'Content Mapping Blueprint']
   },
   {
-    id: 'digital-positioning',
-    name: 'Digital Positioning',
-    pillar: 'digital-positioning',
-    description: 'Taking a business vision, product, or service and refining it into a crystal-clear value proposition that separates you from competitors.',
-    whyItMatters: 'When visitors arrive at your site, you have seconds to answer: What is this? Who is it for? Why does it matter to me?',
-    keyOutputs: ['Digital Proposition Framework', 'Core Messaging Hierarchy', 'Differentiator Articulation']
+    id: 'content-strategy-seo',
+    name: 'Topical Authority & Content Strategy',
+    pillar: 'search-strategy',
+    description: 'Building comprehensive content clusters that establish undeniable subject-matter authority in the eyes of search algorithms.',
+    whyItMatters: 'Modern search engines reward exhaustive, coherent topical coverage over disconnected single articles.',
+    keyOutputs: ['Pillar & Cluster Content Plan', 'Editorial Briefs', 'Internal Linking Strategy']
   },
   {
-    id: 'website-strategy',
-    name: 'Website Strategy',
-    pillar: 'digital-positioning',
-    description: 'Structuring your website as an intelligent commercial instrument rather than a passive brochure.',
-    whyItMatters: 'A website should guide visitors smoothly from initial curiosity to qualified inquiry with minimal friction.',
-    keyOutputs: ['Information Architecture (IA)', 'Wireframe Content Structure', 'Conversion Flow Pathways']
+    id: 'local-seo-discovery',
+    name: 'Local SEO & Regional Discovery',
+    pillar: 'search-strategy',
+    description: 'Optimizing local search signals, maps, citations, and geo-targeted landing pages for dominant regional visibility.',
+    whyItMatters: 'Ensures local and regional buyers discover your business immediately when searching with geographic intent.',
+    keyOutputs: ['Local Search Optimization Blueprint', 'Citation Consistency Verification', 'Geo-Targeted Content Structure']
+  },
+
+  // 04 — Digital Brand & Online Presence
+  {
+    id: 'digital-brand-positioning',
+    name: 'Digital Brand Positioning',
+    pillar: 'digital-brand',
+    description: 'Distilling complex offerings into a sharp, memorable value proposition that cleanly separates you from competitors.',
+    whyItMatters: 'When prospects land on your profile or website, you have seconds to communicate what you do and why you matter.',
+    keyOutputs: ['Digital Proposition Framework', 'Core Messaging Matrix', 'Differentiation Blueprint']
   },
   {
-    id: 'customer-journey',
-    name: 'Digital Customer Journey',
-    pillar: 'digital-positioning',
-    description: 'Mapping the digital touchpoints and psychological checkpoints a prospect passes through before committing to a commercial discussion.',
-    whyItMatters: 'Different buyers enter with different awareness levels. Your digital presence must serve both immediate buyers and research-stage evaluators.',
-    keyOutputs: ['Buyer Journey Lifecycle Map', 'Touchpoint Friction Audit', 'Content-to-Stage Alignment Matrix']
+    id: 'executive-personal-branding',
+    name: 'Executive & Personal Branding',
+    pillar: 'digital-brand',
+    description: 'Positioning founders, consultants, and executives as authoritative industry thought leaders across digital channels.',
+    whyItMatters: 'People buy from people. A strong executive presence accelerates commercial trust and opens institutional doors.',
+    keyOutputs: ['Executive Profile Strategy', 'Content Angle Guidelines', 'Authority Footprint Plan']
   },
   {
-    id: 'analytics-performance',
-    name: 'Analytics & Performance Telemetry',
-    pillar: 'digital-execution',
-    description: 'Implementing clean, privacy-compliant tracking architectures that measure real business signals instead of vanity vanity metrics.',
-    whyItMatters: 'You cannot optimize what you do not accurately measure. We replace guessing with verifiable event data.',
-    keyOutputs: ['GA4 / Search Console Measurement Setup', 'Custom Event Tracking Plan', 'Executive Performance Dashboard']
+    id: 'google-business-reputation',
+    name: 'Google Business Profile & Reputation',
+    pillar: 'digital-brand',
+    description: 'Configuring and refining authoritative search profile assets and digital trust signals to build unmatched credibility.',
+    whyItMatters: 'First impressions frequently happen right on Google’s knowledge panel before a prospect ever clicks your website link.',
+    keyOutputs: ['Optimized Google Business Profile', 'Trust Signal Checklist', 'Review & Social Proof Strategy']
   },
   {
-    id: 'conversion-optimisation',
-    name: 'Conversion Optimisation (CRO)',
-    pillar: 'digital-execution',
-    description: 'Removing cognitive load, unclear copy, and navigation roadblocks to maximize the percentage of visitors who become qualified inquiries.',
-    whyItMatters: 'Doubling your conversion rate yields the same business outcome as doubling your traffic, at a fraction of the acquisition cost.',
-    keyOutputs: ['Conversion Friction Audit', 'CTA & Form Optimisation Plan', 'UX Clarity Recommendations']
-  },
-  {
-    id: 'digital-growth',
-    name: 'Digital Growth Strategy',
-    pillar: 'digital-execution',
-    description: 'Developing sustainable, compounding growth mechanisms across organic search, strategic content, and customer advocacy.',
-    whyItMatters: 'Growth should not depend on fragile algorithms or unpredictable ad price spikes. It requires systematic digital momentum.',
-    keyOutputs: ['Growth Velocity Playbook', 'Quarterly Growth Sprints', 'Ongoing Strategic Consultation']
+    id: 'digital-communication-strategy',
+    name: 'Digital Communications Strategy',
+    pillar: 'digital-brand',
+    description: 'Structuring unified, articulate messaging across digital PR, social channels, email communications, and investor touchpoints.',
+    whyItMatters: 'Inconsistent tone or fragmented messaging erodes credibility and confuses potential high-value clients.',
+    keyOutputs: ['Digital Tone of Voice Guide', 'Channel Messaging Hierarchy', 'Campaign Narrative Playbook']
   }
 ];
 
@@ -288,3 +396,4 @@ export const PHILOSOPHY_QUESTIONS = [
     explanation: 'Designing the lowest-friction, highest-clarity pathway from their initial visit to a meaningful commercial conversation.'
   }
 ];
+

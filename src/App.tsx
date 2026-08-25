@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PageType, CaseStudy } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -7,6 +7,7 @@ import { SeoInspectorModal } from './components/SeoInspectorModal';
 import { CaseStudyModal } from './components/CaseStudyModal';
 import { HomePage } from './pages/HomePage';
 import { WhatIDoPage } from './pages/WhatIDoPage';
+import { InsightsPage } from './pages/InsightsPage';
 import { PricingPage } from './pages/PricingPage';
 import { MyWorkPage } from './pages/MyWorkPage';
 import { AboutPage } from './pages/AboutPage';
@@ -32,7 +33,7 @@ export default function App() {
         }
       }
 
-      if (['home', 'services', 'pricing', 'work', 'about', 'contact'].includes(hash)) {
+      if (['home', 'services', 'insights', 'pricing', 'work', 'about', 'contact'].includes(hash)) {
         setCurrentPage(hash as PageType);
       }
     };
@@ -57,7 +58,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#E8E8E8] antialiased selection:bg-[#C5A358]/30 selection:text-[#FFFFFF]">
+    <div className="min-h-screen flex flex-col bg-[#070D18] text-[#F5F6F8] antialiased selection:bg-[#C5A358]/30 selection:text-[#FFFFFF]">
       {/* Dynamic SEO Meta Manager & Schema.org JSON-LD Injector */}
       <SeoHead page={currentPage} caseStudy={selectedCaseStudy} />
 
@@ -79,6 +80,10 @@ export default function App() {
 
         {currentPage === 'services' && (
           <WhatIDoPage onNavigate={navigateTo} />
+        )}
+
+        {currentPage === 'insights' && (
+          <InsightsPage onNavigate={navigateTo} />
         )}
 
         {currentPage === 'pricing' && (

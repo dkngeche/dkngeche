@@ -1,13 +1,15 @@
-export type PageType = 'home' | 'services' | 'pricing' | 'work' | 'about' | 'contact' | 'case-study';
+export type PageType = 'home' | 'services' | 'insights' | 'pricing' | 'work' | 'about' | 'contact' | 'case-study';
 
-export type ServicePillarId = 'digital-strategy' | 'seo-visibility' | 'digital-positioning' | 'digital-execution';
+export type ServicePillarId = 'digital-strategy' | 'web-strategy' | 'search-strategy' | 'digital-brand';
 
 export interface ServicePillar {
   id: ServicePillarId;
   number: string;
   title: string;
   tagline: string;
+  coreMessage: string;
   description: string;
+  services: string[];
   deliverables: string[];
   businessOutcomes: string[];
   deliverableFocus: string;
@@ -20,6 +22,26 @@ export interface CapabilityItem {
   description: string;
   whyItMatters: string;
   keyOutputs: string[];
+}
+
+export interface InsightItem {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: 'Digital Strategy' | 'Websites' | 'Search Strategy' | 'Digital Brand' | 'AI & Technology' | 'Business Growth';
+  readTime: string;
+  date: string;
+  summary: string;
+  keyTakeaways: string[];
+  sections: {
+    heading: string;
+    content: string[];
+  }[];
+  quote?: {
+    text: string;
+    author?: string;
+  };
 }
 
 export interface JourneyStage {
@@ -64,3 +86,4 @@ export interface ContactFormData {
   budgetRange: string;
   preferredContact: 'email' | 'call' | 'whatsapp';
 }
+

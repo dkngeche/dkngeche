@@ -17,8 +17,8 @@ export function SeoHead({ page, caseStudy }: SeoHeadProps) {
       description = 'Specialist digital strategy, search engine optimization (SEO), technical SEO, and digital positioning consultancy designed for commercial clarity and organic growth.';
       canonical = 'https://dicksonngeche.com/services';
     } else if (page === 'pricing') {
-      title = 'Consultancy Pricing & Engagements | Dickson Ngeche';
-      description = 'Transparent consultancy pricing for digital clarity, strategic direction, and ongoing organic search growth partnerships.';
+      title = 'Work With Me | DKNgeche — Digital Strategy & Growth';
+      description = 'Explore digital strategy, web experience, SEO, digital brand and advisory engagements with Dickson Ngeche.';
       canonical = 'https://dicksonngeche.com/pricing';
     } else if (page === 'work') {
       title = 'SEO & Digital Strategy Case Studies | Dickson Ngeche';
