@@ -36,24 +36,18 @@ export function Navbar({ currentPage, onNavigate, onOpenSeoInspector }: NavbarPr
           <button
             id="nav-logo-btn"
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 text-left group focus:outline-none"
-            aria-label="DKNgeche Homepage"
+            className="flex flex-col justify-center text-left group focus:outline-none py-1"
+            aria-label="Dngeche Homepage"
           >
-            {/* Monogram Badge */}
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#162234] to-[#0B1626] border border-[#C5A358]/40 flex items-center justify-center text-[#C5A358] font-editorial font-bold text-lg shadow-md group-hover:border-[#C5A358] transition-colors">
-              DK
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="font-editorial text-xl sm:text-2xl font-bold tracking-tight text-[#F5F6F8] group-hover:text-white transition-colors">
-                  DKNgeche
-                </span>
-                <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-[#C5A358]"></span>
-              </div>
-              <span className="text-[10px] sm:text-[11px] tracking-widest uppercase font-mono text-white/50 group-hover:text-white/75 transition-colors">
-                Digital Strategy &amp; Growth
+            <div className="flex items-center gap-2">
+              <span className="font-signature text-3xl sm:text-4xl lg:text-[40px] font-normal text-[#F5F6F8] group-hover:text-[#C5A358] transition-colors leading-none tracking-normal select-none">
+                Dngeche
               </span>
+              <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-[#C5A358] -mt-1"></span>
             </div>
+            <span className="text-[9px] sm:text-[9.5px] tracking-[0.22em] uppercase font-mono text-white/50 group-hover:text-white/80 transition-colors -mt-0.5">
+              Digital Strategy &amp; Growth
+            </span>
           </button>
 
           {/* Desktop Navigation Links */}

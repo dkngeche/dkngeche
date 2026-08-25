@@ -56,14 +56,14 @@ export function Footer({ onNavigate, onOpenSeoInspector }: FooterProps) {
           
           {/* Identity & Scope */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-[#162234] border border-[#C5A358]/50 flex items-center justify-center font-editorial text-sm font-bold text-[#C5A358]">
-                DK
+            <button
+              onClick={() => handleNav('home')}
+              className="text-left group focus:outline-none block"
+            >
+              <div className="font-signature text-3xl sm:text-4xl font-normal text-[#F5F6F8] group-hover:text-[#C5A358] tracking-normal transition-colors select-none">
+                Dngeche
               </div>
-              <div className="font-editorial text-2xl font-bold text-[#F5F6F8] tracking-tight">
-                DKNgeche
-              </div>
-            </div>
+            </button>
             <p className="text-sm text-white/65 leading-relaxed max-w-sm">
               Independent Digital Strategy &amp; Growth Consultant. Partnering with forward-thinking enterprises, civil society federations, and leaders across Africa and globally.
             </p>

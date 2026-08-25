@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Bastliga One';
+  src: url('/fonts/bastliga-one.woff2') format('woff2'),
+       url('/fonts/bastliga-one.ttf') format('truetype'),
+       url('https://db.onlinewebfonts.com/t/bf6ea02b18138f138aa22e1094bfdea6.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-serif: 'Newsreader', Georgia, Cambria, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-signature: 'Bastliga One', 'Bastliga', 'Birthstone', 'Herr Von Muellerhoff', 'Alex Brush', cursive;
   
   --color-brand-navy: #070D18;
   --color-brand-midnight: #0B1626;
@@ -35,6 +46,11 @@
   h1, h2, h3, .font-editorial {
     font-family: var(--font-serif);
     letter-spacing: -0.015em;
+  }
+
+  .font-signature {
+    font-family: var(--font-signature);
+    letter-spacing: 0.02em;
   }
 }
 
