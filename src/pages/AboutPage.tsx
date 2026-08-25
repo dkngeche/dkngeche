@@ -193,26 +193,26 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 Professional Background
               </span>
               <h2 className="font-editorial text-3xl sm:text-4xl text-[#F5F6F8] font-bold leading-tight">
-                A Strategic Partner Who Speaks Both Business Reality and Technical SEO.
+                A Strategic Partner Who Speaks Both Business Reality and Digital Strategy.
               </h2>
             </div>
 
             <div className="space-y-4 text-sm sm:text-base text-white/75 leading-relaxed">
               <p>
-                Too often, a profound gap exists in digital projects. On one side, executive leadership understands their commercial model and margin requirements. On the other side, technical developers and SEO technicians execute tasks without understanding how the business actually makes money.
+                Too often, a costly gap exists in digital initiatives. On one side, business leaders understand their revenue targets, margin dynamics, and market realities. On the other, technical agencies and tactical marketers execute fragmented tasks without grasping how the business actually creates value or makes money.
               </p>
               <p>
-                My practice was established to eliminate that friction. I sit at the intersection of business strategy, digital experience design, organic search architecture, and executive brand positioning.
+                My professional background was built to bridge that exact divide. Rather than operating merely as a technical specialist or a superficial marketing vendor, I serve as an end-to-end strategic advisor operating across five interconnected domains: commercial digital strategy, web experience architecture, search visibility (SEO), digital brand positioning, and ongoing executive advisory.
               </p>
               <p>
-                Whether elevating search visibility and technical performance for national bodies like FEDWEN Kenya, developing multi-tier communications for MCCCU and County Fresh dairy brands, structuring product positioning and investor materials for Infiniti Financial Solutions, or crafting institutional B2B campaigns for 24HR Aviation Hub, I bring clarity, precision, and measurable outcomes to every engagement.
+                Over years of hands-on advisory work across East Africa and internationally, I have partnered with executive leadership teams across diverse sectors—from national economic federations and member organizations (such as FEDWEN Kenya) and agricultural value chains (MCCCU and County Fresh) to fintech and financial solutions (Infiniti Financial Solutions) and global aviation logistics (24HR Aviation Hub). In every engagement, my focus is translating complex organizational capability into sharp digital clarity, authoritative presence, and measurable commercial results.
               </p>
             </div>
 
             {/* Quick stats ribbon */}
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/[0.08]">
               <div className="p-4 rounded-xl bg-[#0B1626]/80 border border-white/[0.08]">
-                <div className="font-editorial text-2xl font-bold text-[#F5F6F8]">4 Pillars</div>
+                <div className="font-editorial text-2xl font-bold text-[#F5F6F8]">5 Pillars</div>
                 <div className="text-[11px] font-mono text-white/50 uppercase mt-1">Full-Spectrum Growth</div>
               </div>
               <div className="p-4 rounded-xl bg-[#0B1626]/80 border border-white/[0.08]">
