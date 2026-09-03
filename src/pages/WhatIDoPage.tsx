@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageType } from '../types';
 import { JOURNEY_STAGES, CAPABILITIES, SERVICE_PILLARS } from '../data/servicesData';
+import { CapabilityConnectionDiagram } from '../components/CapabilityConnectionDiagram';
 import {
   Compass,
   Search,
@@ -76,6 +77,11 @@ export function WhatIDoPage({ onNavigate }: WhatIDoPageProps) {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* INTERACTIVE CAPABILITY CONNECTION DIAGRAM */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <CapabilityConnectionDiagram />
       </section>
 
       {/* THE 4 CORE PILLARS OVERVIEW SECTION */}

@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { SeoHead } from './components/SeoHead';
 import { SeoInspectorModal } from './components/SeoInspectorModal';
 import { CaseStudyModal } from './components/CaseStudyModal';
+import { CustomCursor } from './components/CustomCursor';
 import { HomePage } from './pages/HomePage';
 import { WhatIDoPage } from './pages/WhatIDoPage';
 import { InsightsPage } from './pages/InsightsPage';
@@ -59,6 +60,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#070D18] text-[#F5F6F8] antialiased selection:bg-[#C5A358]/30 selection:text-[#FFFFFF]">
+      {/* Editorial Desktop Custom Cursor */}
+      <CustomCursor />
+
       {/* Dynamic SEO Meta Manager & Schema.org JSON-LD Injector */}
       <SeoHead page={currentPage} caseStudy={selectedCaseStudy} />
 

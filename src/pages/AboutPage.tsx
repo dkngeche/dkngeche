@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageType } from '../types';
+import { IntersectionDiagram } from '../components/IntersectionDiagram';
 import {
   Compass,
   Search,
@@ -147,6 +148,11 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* STRATEGIC INTERSECTION OF BUSINESS, DIGITAL, SEO, TECH & GROWTH */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <IntersectionDiagram />
       </section>
 
       {/* CONSULTANT PROFILE & BACKGROUND */}
